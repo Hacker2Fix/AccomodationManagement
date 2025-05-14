@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Signin Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Student</h1>
+        <p>Please fill your details below.</p>
+        <form action="SignInServlet.do" method="post">
+            <table>
+                <tr>
+                    <td>Student number:</td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Surname:</td>
+                    <td><input type="text" name="surname"></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="text" name="gender"></td>
+                </tr>
+                <tr>
+                    <td>ID no:</td>
+                    <td><input type="text" name="idno"></td>
+                </tr>
+                <tr>
+                    <td>Phone no:</td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Guardian:</td>
+                    <td>
+                        <select name="guard">
+                            <option value="Mother">Mother</option>
+                            <option value="Father">Father</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Guardian name:</td>
+                    <td><input type="text" name="guardName"></td>
+                </tr>
+                <tr>
+                    <td>Guardian phone:</td>
+                    <td><input type="text" name="guardPhone"></td>
+                </tr>
+                <tr>
+                    <td>Nsfas status:</td>
+                    <td>
+                        <select name="status">
+                            <option value="Funded">Funding Eligibility Assessment</option>
+                            <option value="Awaiting">Awaiting Academic Results or Admission</option>
+                            <option value="Reg Process">Registration Process</option>
+                            <option value="Not Funded">Not Funded</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Room no:</td>
+                    <td><input type="text" name="room"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="ADD"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
